@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cherry+Bomb+One&family=Chewy&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+:root {
+  --cream: #f6f7e9;
+  --brown: #6c3c1e;
+  --brown-half-transparrent: #6c3c1e48;
+  --footer: #2d1607;
+  --padding: 2em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F6F7E9;
+  font-family: "Comic Neue", sans-serif;
+}
+
+.hero-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../assets/bg.jpg") cover;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+img {
+  width: 100%;
+}
+
+p, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+.wrapper {
+  width: auto;
+  padding: 0 var(--padding);
+  margin: auto;
+}
+
+header {
+  color: var(--cream);
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 12vh;
+}
+header svg {
+  width: 1.8em;
+  cursor: pointer;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 0.5em;
+  font-family: "Abril Fatface", serif;
+  font-size: 1.1em;
+  cursor: pointer;
+  color: var(--cream);
+}
+.logo-container img {
+  width: 1.5em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.desktop-only {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section.hero {
+  color: var(--cream);
+  padding-top: 7vh;
+  height: 81vh;
+  top: 0;
+}
+
+h1 {
+  font-family: "Cherry Bomb One", sans-serif;
+  font-size: 2.7em;
+  line-height: 1em;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.down {
+  width: 9em;
+  position: absolute;
+  bottom: 0;
+  left: var(--padding);
+}
+.down path {
+  fill: var(--cream);
+}
+
+.mascot {
+  width: 19em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 4.5em;
+     object-position: 4.5em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.brown1 {
+  padding: 5em var(--padding);
+  color: var(--cream);
+  font-family: "chewy", sans-serif;
+  background-color: var(--brown);
+}
+.brown1 h2 {
+  color: var(--cream);
+  font-size: 1.5em;
+}
+
+.variant {
+  padding-top: 5em;
+}
+.variant img {
+  border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 12.5em;
+  max-width: 23em;
+  padding-bottom: 1em;
+}
+.variant h2 {
+  padding-bottom: 0.3em;
+}
+.variant p {
+  padding-bottom: 4em;
+}
+.variant .p1 {
+  padding-bottom: 2.5em;
+}
+
+h2 {
+  font-family: "chewy", sans-serif;
+  color: var(--brown);
+}
+
+p {
+  font-size: 1.1em;
+}
+
+.more-info {
+  padding-top: 2em;
+}
+.more-info img {
+  width: 15em;
+  display: grid;
+  margin: auto;
+  padding-bottom: 1.5em;
+}
+.more-info h2 {
+  padding: 2.5em 0;
+}
+
+.cons {
+  padding-bottom: 5em;
+}
+.cons h3 {
+  font-family: "chewy", sans-serif;
+  color: var(--brown);
+  font-size: 1.3em;
+  padding-bottom: 0.3em;
+}
+
+.order {
+  margin-top: 2em;
+  background-color: var(--brown);
+  color: var(--cream);
+  padding: 3em var(--padding);
+}
+.order .p2 {
+  font-weight: bold;
+}
+.order ul {
+  display: flex;
+  gap: 0.5em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.order h2 {
+  color: var(--cream);
+  padding-bottom: 0.3em;
+}
+
+.button {
+  margin: 2.5em 0 1em 0;
+  display: flex;
+  gap: 0.3em;
+  align-items: center;
+  background-color: var(--cream);
+  color: var(--brown);
+  font-family: "chewy", sans-serif;
+  font-weight: 400;
+  height: 2em;
+  padding: 0.3em 1em;
+  border-radius: 50em;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+.button svg {
+  width: 1.5em;
+  stroke-width: 2em;
+}
+
+button {
+  background-color: transparent;
+  border: 5px solid var(--cream);
+  border-radius: 50em;
+  color: var(--cream);
+  font-family: "chewy", sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+  padding: 0.3em 1.5em;
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--footer);
+  color: var(--cream);
+  padding: 4em var(--padding);
+}
+footer p {
+  text-align: center;
+  padding-bottom: 3em;
+}
+footer .logo-footer {
+  width: auto;
+  display: flex;
+  gap: 0.3em;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  padding-right: 1.4em;
+  padding-bottom: 1em;
+}
+footer .logo-footer img {
+  width: 2.5em;
+}
+footer .logo-footer a {
+  font-family: "Abril Fatface", sans-serif;
+  color: var(--cream);
+}
+footer .ig {
+  width: auto;
+  display: flex;
+  gap: 0.3em;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -3em;
+  color: var(--cream);
+}
+footer .ig img {
+  width: 1.5em;
+}
+footer .ig a {
+  color: var(--cream);
+}
+
+@media only screen and (min-width: 600px) {
+  :root {
+    --padding: 4em;
+  }
+  .hero p {
+    width: 18em;
+  }
+  .p1 {
+    width: 25em;
+  }
+  .variant img {
+    display: unset;
+  }
+  .brown1 {
+    text-align: center;
+  }
+  .brown1 h2 {
+    font-size: 2em;
+  }
+  .more-info h2 {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header svg {
+    display: none;
+  }
+  .desktop-only {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+  }
+  .desktop-only a {
+    color: var(--cream);
+    font-family: "comic neue";
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .desktop-only :hover {
+    text-decoration: underline;
+  }
+  .variant-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 5em;
+    padding-bottom: 6em;
+    max-width: 50em;
+    margin: auto;
+  }
+  .variant-container img {
+    padding: 0;
+    width: 20em;
+    height: 12.5em;
+  }
+  .variant-container h2 {
+    padding-bottom: 0.3em;
+  }
+  .variant-container p {
+    padding-bottom: 0;
+  }
+  .variant-container .content {
+    align-self: center;
+  }
+  .variant-container.left {
+    grid-template-areas: "content image";
+  }
+  .variant-container.left .content {
+    grid-area: content;
+    text-align: right;
+  }
+  .variant-container.left img {
+    grid-area: image;
+  }
+  .cons {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 5em;
+    padding-bottom: 6em;
+    max-width: 50em;
+    margin: auto;
+  }
+  .cons img {
+    padding: 0;
+  }
+  .cons h3 {
+    padding-bottom: 0;
+  }
+  .cons p {
+    padding-bottom: 0;
+  }
+  .cons .desc {
+    align-self: center;
+  }
+  .cons.left {
+    grid-template-areas: "desc image";
+    text-align: right;
+  }
+  .cons.left .desc {
+    grid-area: desc;
+  }
+  .cons.left img {
+    grid-area: image;
+  }
+  .logo-container {
+    color: var(--brown);
+  }
+  .hero-img img {
+    width: 50%;
+    left: unset;
+    right: 0;
+    height: 85vh;
+  }
+  section.hero {
+    color: var(--brown);
+    width: 45%;
+  }
+  .hero p {
+    width: auto;
+  }
+  .down path {
+    fill: var(--brown);
+  }
+  .mascot {
+    width: 19em;
+    bottom: 15vh;
+    -o-object-position: unset;
+       object-position: unset;
+  }
+  .p2 {
+    width: 37em;
+  }
+}
+@media only screen and (min-width: 920px) {
+  .wrapper {
+    max-width: 920px;
+    margin: 0 auto;
+  }
+  .down {
+    position: absolute;
+    bottom: 0;
+    left: unset;
+  }
+  .intro {
+    text-align: center;
+  }
+  .intro .p1 {
+    display: block;
+    margin: auto;
+  }
+  .order {
+    text-align: center;
+  }
+  .order .p2 {
+    width: 37em;
+    margin: auto;
+  }
+  .order ul {
+    justify-content: center;
+  }
+  .mascot {
+    right: 4em;
+    width: 21em;
+  }
+}/*# sourceMappingURL=main.css.map */
