@@ -8,11 +8,16 @@
     --padding: 2em;
     }
 
+html {
+    height: -webkit-fill-availible;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: #F6F7E9;
     font-family: "Comic Neue", sans-serif;
+    height: -webkit-fill-availible;
 }
 
 .hero-img img {
