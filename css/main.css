@@ -208,10 +208,10 @@ span img {
 .availible span {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 800;
-  font-size: 0.9em;
+  font-size: 0.7em;
   color: #EE2737;
   background-color: white;
-  padding: 0 0.7em 0.25em;
+  padding: .15em .7em 0;
   border-radius: 25px;
 }
 .availible h2 {
@@ -234,7 +234,7 @@ span img {
   border: none;
   background-color: var(--cream);
   color: var(--brown);
-  font-size: 1.1em;
+  font-size: 1em;
   padding: 0.3em 1em;
 }
 .availible button img {
@@ -252,8 +252,8 @@ span img {
 }
 .testimoni .testi1 {
   background-color: var(--brown);
-  width: 7em;
-  height: 15em;
+  width: 6em;
+  height: 12em;
   border-radius: 25px;
 }
 .testimoni svg {
@@ -522,15 +522,16 @@ footer .ig a {
   }
 }
 @media only screen and (min-width: 1100px) {
+
   .wrapper {
     max-width: 1100px;
     margin: 0 auto;
   }
   .mascot {
     width: 50%;
-    max-width: 35em;
-    -o-object-position: unset;
-       object-position: unset;
+    max-width: 25em;
+    object-position: unset;
+    object-position: unset;
     right: 5%;
   }
-}/*# sourceMappingURL=main.css.map */
+}
